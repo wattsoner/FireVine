@@ -28,12 +28,13 @@ document.onreadystatechange = function () {
     let filteredCount = 0;
     const bgColour = window.getComputedStyle(document.body).getPropertyValue('background-color');
     const textColour = 'Firebrick';
-    const hideSymbol = "https://raw.githubusercontent.com/MD2K23/VineToolsUK/master/Hide.png";
-    const unhideSymbol = "https://raw.githubusercontent.com/MD2K23/VineToolsUK/master/Unhide.png";
-    const filterSymbol = "https://raw.githubusercontent.com/MD2K23/VineToolsUK/master/Filter.png";
-    const unfilterSymbol = "https://raw.githubusercontent.com/MD2K23/VineToolsUK/master/Unfilter.png";
-    const highlightSymbol = "https://raw.githubusercontent.com/MD2K23/VineToolsUK/master/highlight.png";
-    const unhighlightSymbol = "https://raw.githubusercontent.com/MD2K23/VineToolsUK/master/Unhighlight.png";
+    const hideSymbol = "https://raw.githubusercontent.com/wattsoner/FireVine/main/assets/eye-black.png";
+    const unhideSymbol = "https://raw.githubusercontent.com/wattsoner/FireVine/main/assets/angry-eye-red.png";
+    const filterSymbol = "https://raw.githubusercontent.com/wattsoner/FireVine/main/assets/abc-100.png";
+    const unfilterSymbol = "https://raw.githubusercontent.com/wattsoner/FireVine/main/assets/remove-100.png";
+    const highlightSymbol = "https://raw.githubusercontent.com/wattsoner/FireVine/main/assets/highlight-100.png";
+    const unhighlightSymbol = "https://raw.githubusercontent.com/wattsoner/FireVine/main/assets/remove-100.png";
+    const resetCacheSymbol = "https://raw.githubusercontent.com/wattsoner/FireVine/main/assets/reset-100.png";
     const hiddenText = " Items hidden";
     const filteredText = " Items filtered";
     const filterMessage = "Enter a keyword, phrase, or regular expression to filter items:";
@@ -376,7 +377,7 @@ document.onreadystatechange = function () {
         padding-left:40px;
       }
       #hideVineItems-clearCache {
-        background: url("${unfilterSymbol}");
+        background: url("${resetCacheSymbol}");
         background-repeat: no-repeat;
         background-size:contain;
         padding-left:40px;
